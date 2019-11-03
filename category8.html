@@ -132,8 +132,8 @@
 window.addEventListener('load', ()=> {
 
   for (idValue=7001 ; idValue<=8000; idValue++){
-      const api = `http://jservice.io/api/category?id=${(idValue)}`
-
+      const proxy = "https://cors-anywhere.herokuapp.com/";
+      const api = `${proxy}http://jservice.io/api/category?id=${(idValue)}`
       fetch(api)
       .then(response =>{
           //convert info to json format
