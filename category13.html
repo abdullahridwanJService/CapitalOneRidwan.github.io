@@ -132,7 +132,7 @@
 window.addEventListener('load', ()=> {
 
   for (idValue=12001 ; idValue<=13000; idValue++){
-      const api = `https://jservice.io/api/category?id=${(idValue)}`
+      const api = `http://jservice.io/api/category?id=${(idValue)}`
 
       fetch(api)
       .then(response =>{
