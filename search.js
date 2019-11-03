@@ -9,7 +9,8 @@ btnSearch.addEventListener('click', ()=>{
     var maxDate = document.getElementById("maxDate").value;
     console.log(value);
     console.log(minDate);
-    const api = `https://jservice.io/api/clues?value=${value}&min_date=${minDate}&max_date=${maxDate}`
+    const proxy = "https://cors-anywhere.herokuapp.com/";
+    const api = `${proxy}https://jservice.io/api/clues?value=${value}&min_date=${minDate}&max_date=${maxDate}`
     
     fetch(api)
     .then(response =>{
