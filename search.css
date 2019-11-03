@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar{
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    padding: 0 !important;
+    margin-bottom: 20px;
+
+}
+
+
+.navbar-nav a{
+    color: #fff !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.navbar-toggler{
+    outline: none !important;
+}
+.pageTitle{
+    text-align: center;
+}
+
+
+.pageTitle::before{
+    content:"";
+    background: #7b1798;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    transform: translateY(63px);
+}
+
+
+
+.pageTitle::after{
+    content:"";
+    background: #7b1798;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display:block;
+    transform: translateY(18px);
+}
+
+.form-group{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+}
+
+#input .btn-primary{
+    margin-bottom: 100px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+
+}
+
+
+.para{
+    margin-left: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 50px;
+}
+
+.table{
+    margin-top: 20px;
+}
+
+.tableTitle{
+    text-align: center;
+}
+.tableTitle::before{
+    content:"";
+    background: white;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    transform: translateY(63px);
+}
+
+
+
+.tableTitle::after{
+    content:"";
+    background:white;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display:block;
+    transform: translateY(18px);
+}
+
+#table{
+    color: white;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+#table tr{
+    color: white !important;
+}

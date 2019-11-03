@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Searcher</title>
+        <link rel="stylesheet" href="search.css">
+        
+        <!-- Bootstrap links -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <!--Font Awesome 4 Link-->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+<!---------------------------------------- NAVBAR ---------------------------------->
+<section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#" id="name">Jeopardy</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="index.html">HOME </a>
+                <a class="nav-item nav-link" href="Search.html">SEARCHER</a>
+                <a class="nav-item nav-link" href="category.html">ID FINDER</a>
+              </div>
+            </div>
+          </nav>
+</section>
+<!------------------------------------- INPUT SECTION ---------------------------------->
+        <section id="input">
+            <div class="container"></div>
+            <h2 class="pageTitle"> Searcher</h2>
+                <div class="para">
+                <p class="para"> Hey! This is the <b>Searcher</b> which allows you to look through
+                    past jeopardy questions based on factors like the amount of points that the question is worth. 
+                    Simply <b> input your choices</b> and 
+                    the questions pop up on the table below!
+                </p>
+                </div>
+                <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Point Value?</label>
+                            <select class="form-control" id="value">
+                                <option>200</option>
+                                <option>400</option>
+                                <option>600</option>
+                                <option>800</option>
+                                <option>1000</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="formGroupExampleInput2">Minimum Airdate</label>
+                          <input type="text" class="form-control" id="minDate" placeholder="YYYY-MM-DD">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="formGroupExampleInput2">Maximum Airdate</label>
+                          <input type="text" class="form-control" id="maxDate" placeholder="YYYY-MM-DD">
+                        </div>
+                        
+
+                        <div class="form-group">
+                          <label for="formGroupExampleInput2">Category ID</label>
+                          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Category ID">
+                          <a class="btn btn-primary" href="category.html" role="button">Click Here to Find an ID</a>
+
+                        </div>
+
+
+                        
+                        <div class="wrapper">
+                            <button type="button" class="btn btn-primary" id="btnSearch">Search</button>
+                        </div>
+                    </form>
+                </div>
+        </section>
+<!------------------------------------------------- TABLE SECTION------------------------------------>
+<section>
+    <div class="container" id="table">
+    <h2 class="tableTitle"> Table</h2>
+
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Number</th>
+            <th scope="col">Value</th>
+            <th scope="col">Question</th>
+            <th scope="col">Answer</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+    </div>
+</section>
+
+
+
+
+
+        <script src="search.js"></script>
+    </body>
+
+</html>
